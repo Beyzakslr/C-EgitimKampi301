@@ -56,14 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmCategory.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +91,14 @@
     <ProjectReference Include="..\C#EgitimKampi301.BusinessLayer\C#EgitimKampi301.BusinessLayer.csproj">
       <Project>{a57a27c3-3276-4e01-98ad-fef8cac2822b}</Project>
       <Name>C#EgitimKampi301.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C#EgitimKampi301.DataAccessLayer\C#EgitimKampi301.DataAccessLayer.csproj">
+      <Project>{AA78CF3E-C29F-4DAE-9E13-EDACA81C7A22}</Project>
+      <Name>C#EgitimKampi301.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C#EgitimKampi301.EntityLayer\C#EgitimKampi301.EntityLayer.csproj">
+      <Project>{547E5D99-6277-4A37-A0C1-B314466942CF}</Project>
+      <Name>C#EgitimKampi301.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
