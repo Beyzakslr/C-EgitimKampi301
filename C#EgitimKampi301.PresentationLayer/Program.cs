@@ -16,7 +16,7 @@ namespace C_EgitimKampi301.PresentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCategory());
+            Application.Run(new FrmProduct());
         }
     }
 }

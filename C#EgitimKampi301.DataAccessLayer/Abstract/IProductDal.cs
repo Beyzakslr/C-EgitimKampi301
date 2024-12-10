@@ -9,5 +9,6 @@ namespace C_EgitimKampi301.DataAccessLayer.Abstract
 {
     public interface IProductDal:IGenericDal<Product>
     {
+        List<Object> GetProductsWithCateory();
     }
 }
