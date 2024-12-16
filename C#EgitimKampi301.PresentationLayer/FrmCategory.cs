@@ -191,6 +191,7 @@ namespace C_EgitimKampi301.PresentationLayer
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.label1);
             this.Name = "FrmCategory";
+            this.Load += new System.EventHandler(this.FrmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -251,6 +252,11 @@ namespace C_EgitimKampi301.PresentationLayer
             updatedValue.CategoryStatus = true;
             _categoryService.TUpdate(updatedValue);
             MessageBox.Show("Güncelleme Başarılı");
+        }
+
+        private void FrmCategory_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
